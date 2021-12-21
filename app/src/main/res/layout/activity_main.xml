@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -17,12 +18,17 @@
         android:text="펑 ＼(◎o◎)／！"
         android:visibility="gone"
         />
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
 
     <Button
         android:id="@+id/btnExplosion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="3초 뒤에 폭발"/>
+        android:text="누르면 2초뒤 폭발"/>
 
 
 </LinearLayout>

@@ -23,19 +23,25 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupEvents() {
         btnExplosion.setOnClickListener {
-            callBackMethod()
+            callBackMethod1(completion = {
+                Log.d(TAG, "2초 후에 폭발했다!")
+                txtView.visibility = View.VISIBLE
+                txtMessage.text = it
+            })
         }
+
+
+
     }
 
     private fun setValues() {
     }
 
-    fun callBackMethod(){
+    fun callBackMethod1(completion: (String) -> Unit){
         Log.d(TAG, "callBackMaethod()")
 
         Handler().postDelayed({
-            Log.d(TAG, "3초 후에 폭발")
-            txtView.visibility = View.VISIBLE
-        }, 3000)
+            completion("callBackMethod1에서 폭발했다.")
+        }, 2000)
     }
 }
