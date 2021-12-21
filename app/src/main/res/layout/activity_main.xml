@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="45sp"
+        android:text="펑 ＼(◎o◎)／！"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btnExplosion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3초 뒤에 폭발"/>
 
 
 </LinearLayout>
