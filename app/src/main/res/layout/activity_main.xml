@@ -11,27 +11,50 @@
         android:id="@+id/txtView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
-        android:textSize="45sp"
-        android:textColor="@color/black"
+        android:gravity="center"
         android:text="펑!＼(◎o◎)／🎆"
-        android:visibility="gone"
-        />
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:visibility="gone" />
+
     <TextView
         android:id="@+id/txtMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:text=""/>
+        android:text=""
+        android:textColor="@color/black" />
 
-    <Button
-        android:id="@+id/btnSetOff"
+
+    <LinearLayout
+        android:id="@+id/laySetOffSetting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:layout_gravity="center"
-        android:text="연쇄 폭죽 버튼"/>
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtSec"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초 간격으로" />
+
+        <Button
+            android:id="@+id/btnSetOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:text="연쇄 폭죽 실행" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnReplay"
@@ -39,8 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:visibility="gone"
-        android:text="다시 하기🔄"/>
+        android:text="다시 하기🔄"
+        android:visibility="gone" />
 
 
 </LinearLayout>
