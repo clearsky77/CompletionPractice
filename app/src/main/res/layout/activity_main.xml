@@ -15,20 +15,32 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
         android:textSize="45sp"
-        android:text="펑 ＼(◎o◎)／！"
+        android:textColor="@color/black"
+        android:text="펑!＼(◎o◎)／🎆"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/txtMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text=""/>
 
     <Button
-        android:id="@+id/btnExplosion"
-        android:layout_width="match_parent"
+        android:id="@+id/btnSetOff"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="누르면 2초뒤 폭발"/>
+        android:layout_gravity="center"
+        android:text="연쇄 폭죽 버튼"/>
+
+    <Button
+        android:id="@+id/btnReplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:text="다시 하기🔄"/>
 
 
 </LinearLayout>
